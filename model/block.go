@@ -49,6 +49,6 @@ func (m *Block) SetHash() {
 	m.Hash = hash[:]
 }
 
-func NewGenesisBlock() {
-	NowBlock([]byte{}, "Genesis Block!")
+func NewGenesisBlock() *Block {
+	return NowBlock([]byte{}, "Genesis Block!")
 }
